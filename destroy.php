@@ -1,0 +1,11 @@
+<?php
+session_start();
+			if(isset($_SESSION['user_id'])){
+			session_destroy();
+			header('Location:http://localhost/fb/index1.php');
+			}
+			else
+			{
+				header('Location:http://localhost/fb/index1.php');
+			}
+			?>
